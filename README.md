@@ -44,6 +44,58 @@ Situación: Imagina 20 monedas justas justas (cara o cruz). Calcula la entropía
 Paso 1: Identifica Ω (número de microestados).Es el número de formas de elegir 10 caras de 20 monedas:
 Paso 2: Calcula la entropía.(Aquí es la constante de Boltzmann; numéricamente ~1.38×10^{-23} J/K, pero para sistemas macro se usa en unidades arbitrarias).
 Paso 3: Compara con máximo.Máxima Ω total = 2^{20} = 1,048,576 (todos los estados posibles).S_máx =k_Bln(2^{20}) = 20k_Bln 2 ≈ 13.86k_B.Conclusión: Estemacroestado tiene ...(truncated 5066 characters)...nn. El principio de máxima entropía cuántico de Jaynes da distribuciones térmicas desde restricciones de energía (Vedral et al., 1997).
+## Entropía como calidad de información 
+
+La entropía de Shannon, desarrollada en 1948, redefine la entropía como una medida de incertidumbre o información promedio en un mensaje o fuente de datos. No es "desorden físico", sino cuántos bits necesitas en promedio para describir un evento aleatorio. Para una fuente con eventos de probabilidad p_i, la entropía mide la "sorpresa media" necesaria para codificar la información (Shannon, 1948).
+Definición Matemática
+Para una variable aleatoria discreta X con N posibles outcomes de probabilidades {p_1ⓜ,p_2ⓜ,...ⓜ,p_N }:
+H(X)=-∑_(i=1)^N▒p_i  〖log⁡〗_2 p_i
+Unidades: bits (log base 2). Si usas ln, son nats.
+Propiedades clave:
+	H máxima cuando todos p_i=1/N: H_max=〖log⁡〗_2 N
+	H=0 si un evento es cierto (p=1)
+	Concava: mezcla probabilidades no reduce información
+Conexión con la Entropía Física
+Edwin Jaynes (1957) demostró que la fórmula de Boltzmann S=k_B ln⁡Ω es idéntica a la entropía de Shannon cuando todos los microestados son equiprobables (p_i=1/Ω):
+S=-k_B∑p_i ln⁡p_i=k_B ln⁡Ω
+La termodinámica emerge como inferencia bayesiana máxima de entropía bajo restricciones macroscópicas conocidas (Jaynes, 1957).
+Ejemplos prácticos: 
+Ejemplo 1: Cara/Cruz sesgada
+Moneda con P(cara)=0.9, P(cruz)=0.1.
+H=-[0.9〖log⁡〗_2 0.9+0.1〖log⁡〗_2 0.1]=-[0.9(-0.152)+0.1(-3.322)]=0.469" bits" 
+Comparación: Moneda justa (0.5/0.5): H=1 bit.
+Interpretación: La moneda sesgada da menos información por tiro (más predecible), requiere menos bits para comprimir secuencias largas.
+Ejemplo 2: Texto de inglés básico (Compresión real)
+Fuente: Texto simple con letras frecuentes en inglés básico:
+e(0.30), t(0.20), a(0.15), o(0.10), i(0.08), n(0.07), r(0.05), s(0.05)
+Paso 1: Construye el árbol Huffman (proceso simplificado):
+	Une los menos frecuentes: r+s = 0.10 → nuevo nodo "rs"
+	Une i+n = 0.15 → nuevo nodo "in"
+	Une "rs"(0.10) + o(0.10) = 0.20 → nodo "rso"
+	Ahora tienes: e(0.30), t(0.20), a(0.15), "in"(0.15), "rso"(0.20)
+	Une a+"in" = 0.30 → nodo "ain"
+	Une t+"rso" = 0.40 → nodo "trso"
+	Final: e(0.30) vs "trso"(0.40) → raíz
+Tabla de códigos resultantes:
+Letra	Prob	Código	Longitud
+e	0.30	0	1
+t	0.20	100	3
+a	0.15	110	3
+o	0.10	1010	4
+i	0.08	1110	4
+n	0.07	1111	4
+r	0.05	10110	5
+s	0.05	10111	5
+Paso 2: Calcula tasa promedio de bits
+L=0.30⋅1+0.20⋅3+0.15⋅3+0.10⋅4+0.08⋅4+0.07⋅4+0.05⋅5+0.05⋅5=3.05" bits/letra" 
+Paso 3: Entropía teórica H
+H=-∑p_i 〖log⁡〗_2 p_i≈2.95" bits/letra"
+(Códigos muy cercanos al óptimo)
+Comparación práctica:
+	Codificación fija (8 bits/letra, ASCII) = 8 bits
+	Huffman = 3.05 bits → 62% de compresión
+	Ejemplo texto: "the" → t(100)+h(?)+e(0) = ~7 bits vs 24 bits fijos
+Conclusión: En textos reales, Huffman ahorra ~60% espacio. ZIP/JPG lo usan combinado con otros métodos (Shannon, 1948).
 
 ## Entropía como función de la dimensionalidad
 IntroducciónEn teoría de la información y aprendizaje automático, laentropía crece explosivamente con la dimensionalidad D del espacio de datos ("maldición de la dimensionalidad"). En D→∞, el volumen se concentra en la cáscara superficial, haciendo H∝D×2ᴰ. Elprincipio holográfico resuelve esto: toda información D-dimensional se codifica eficientemente en (D-1)-dimensional, como enAdS/CFT donde gravedad 5D=teoría de campos 4D en frontera (Bellman, 1961;Maldacena, 1998).
