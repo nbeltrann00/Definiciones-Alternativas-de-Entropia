@@ -94,6 +94,7 @@ Tabla de códigos resultantes:
 |- r	  		0.05	     10110	   		5         |
 |- s	   		0.05	     10111	   		5         |
 |-----------------------------------------------------|
+
 Paso 2: Calcula tasa promedio de bits
 -L=0.30⋅1+0.20⋅3+0.15⋅3+0.10⋅4+0.08⋅4+0.07⋅4+0.05⋅5+0.05⋅5=3.05" bits/letra" 
 Paso 3: Entropía teórica H
