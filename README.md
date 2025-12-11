@@ -2,9 +2,6 @@
 # Entropía y Segunda Ley de la Termodinámica  
 ### Una visión moderna: dispersión de energía, microestados y principio holográfico  
 
-![Entropía – Dispersión de Energía](https://raw.githubusercontent.com/ImMalware/images/main/entropia-banner.jpg)  
-*(De dispersión energética a la holografía de datos)*
-
 ---
 
 ## Índice
