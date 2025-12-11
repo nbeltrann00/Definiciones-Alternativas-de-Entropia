@@ -91,10 +91,15 @@ H₂O(s) → H₂O(l) a +10 °C → ΔSₜₒₜ > 0 → **espontáneo**
 
 - Física Estadística (Boltzmann/Microestados) 
 Reif, F. (1965). Fundamentals of statistical and thermal physics. McGraw-Hill.
-- Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill.  
-- Bellman, R. (1961). *Adaptive Control Processes*. Princeton University Press.  
-- ’t Hooft, G. (1993). Dimensional reduction in quantum gravity. arXiv:gr-qc/9310026  
-- Maldacena, J. (1998). The large N limit of superconformal field theories and supergravity.  
-- Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Review.
-
+- Shannon, C. E. (1948). A mathematical theory of communication. The Bell System Technical Journal, 27(3), 379-423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x
+- Nielsen, M. A., & Chuang, I. L. (2000). Quantum computation and quantum information. Cambridge University Press. https://doi.org/10.1017/CBO9780511976667
+- Vedral, V., Plenio, M. B., Rippin, M. A., & Knight, P. L. (1997). Rigorous conditions for pure-state convertibility and their application to entanglement. Physical Review Letters, 78(17), 3217-3220. https://doi.org/10.1103/PhysRevLett.78.3217
+- Principio Holográfico
+'t Hooft, G. (1993). Dimensional reduction in quantum gravity. arXiv:gr-qc/9310026. https://arxiv.org/abs/gr-qc/9310026
+- Susskind, L. (1995). The world as a hologram. Journal of Mathematical Physics, 36(11), 6377-6396. https://doi.org/10.1063/1.531249
+- Maldacena, J. (1998). The large N limit of superconformal field theories and supergravity. Advances in Theoretical and Mathematical Physics, 2, 231-252. https://doi.org/10.4310/ATMP.1998.v2.n2.a1
+- Bellman, R. (1961). Adaptive control processes: A guided tour. Princeton University Press.
+- Jaynes, E. T. (1957). Information theory and statistical mechanics. Physical Review, 106(4), 620-630. https://doi.org/10.1103/PhysRev.106.620
+- Jaynes, E. T. (1957). Information theory and statistical mechanics II. Physical Review, 108(2), 171-190. https://doi.org/10.1103/PhysRev.108.171
+- Flowers, P., Theopold, K., Langley Richard, & Robinson, W.R. (2015). Chemistry. Houston: OpenStax.
 ---
