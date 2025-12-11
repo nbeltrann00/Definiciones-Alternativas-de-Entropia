@@ -102,4 +102,7 @@ Reif, F. (1965). Fundamentals of statistical and thermal physics. McGraw-Hill.
 - Jaynes, E. T. (1957). Information theory and statistical mechanics. Physical Review, 106(4), 620-630. https://doi.org/10.1103/PhysRev.106.620
 - Jaynes, E. T. (1957). Information theory and statistical mechanics II. Physical Review, 108(2), 171-190. https://doi.org/10.1103/PhysRev.108.171
 - Flowers, P., Theopold, K., Langley Richard, & Robinson, W.R. (2015). Chemistry. Houston: OpenStax.
+### AUTORES:
+> Nhoe Gabrhiel Beltran Nova, 1052840863, nbeltrann@unal.edu.co
+> Heilerth Jesus Gonzalez Bracho, 6046140, hgonzalezbr@unal.edu.co
 ---
