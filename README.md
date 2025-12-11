@@ -82,16 +82,18 @@ Paso 1: Construye el árbol Huffman (proceso simplificado):
 	Une t+"rso" = 0.40 → nodo "trso"
 	Final: e(0.30) vs "trso"(0.40) → raíz
 Tabla de códigos resultantes:
- 
-  # Letra		Prob		Código		Longitud
-- e	   		0.30	      0	         	1
-- t	        0.20	     100	    	3
-- a	   		0.15	     110	    	3
-- o	   		0.10	     1010	    	4
-- i	   		0.08	     1110	    	4
-- n	   		0.07	     1111	    	4
-- r	  		0.05	     10110	   		5
-- s	   		0.05	     10111	   		5
+|-----------------------------------------------------|
+| |Letra|		|Prob|		|Código|	|Longitud|    |
+|-----------------------------------------------------|
+|- e	   		0.30	      0	         	1         |
+|- t	        0.20	     100	    	3         |
+|- a	   		0.15	     110	    	3         |
+|- o	   		0.10	     1010	    	4         |
+|- i	   		0.08	     1110	    	4         |
+|- n	   		0.07	     1111	    	4         |
+|- r	  		0.05	     10110	   		5         |
+|- s	   		0.05	     10111	   		5         |
+|-----------------------------------------------------|
 Paso 2: Calcula tasa promedio de bits
 -L=0.30⋅1+0.20⋅3+0.15⋅3+0.10⋅4+0.08⋅4+0.07⋅4+0.05⋅5+0.05⋅5=3.05" bits/letra" 
 Paso 3: Entropía teórica H
@@ -104,9 +106,32 @@ Paso 3: Entropía teórica H
 -Ejemplo texto: "the" → t(100)+h(?)+e(0) = ~7 bits vs 24 bits fijos
 
 Conclusión: En textos reales, Huffman ahorra ~60% espacio. ZIP/JPG lo usan combinado con otros métodos (Shannon, 1948).
+## Entropía como entrelazamiento de información 
+-Introducción
+En mecánica cuántica, la entropía de von Neumann generaliza la entropía de Shannon al mundo cuántico, midiendo la "mezcla" o pureza de un estado cuántico. Para sistemas entrelazados, captura la correlación cuántica no clásica que no se puede describir por estados separados. Cuando dos partículas están entrelazadas, su entropía conjunta es baja (estado puro), pero cada subsistema por separado tiene entropía máxima (totalmente mezclada), cuantificando así el grado de entrelazamiento (Nielsen & Chuang, 2000).
+Definición Matemática
+Para un sistema cuántico con matriz densidad ρ:
+S(ρ)=-"Tr"(ρ〖log⁡〗_2 ρ)
+-Propiedades clave:
+	Estado puro: ρ=∣ψ⟩⟨ψ∣, eigenvalues=1,0 → S=0
+	Estado máximo mezclado (qubit): ρ=I/2, S=1 bit
+	Subaditividad: S(AB)≤S(A)+S(B), igualdad si no entrelazados
+-Diferencia con Shannon
+Shannon asume observables conmutativos (clásicos). Von Neumann maneja no-conmutatividad:
+S(ρ_AB)+S(ρ_A)+S(ρ_B)≥S(ρ_A⊗ρ_B)
+La discordancia cuántica mide exceso de correlación cuántica sobre clásica.
+-Ejemplo 1: Par de Bell (Máximo entrelazamiento)
+Estado: ∣Φ^+⟩=(∣00⟩+∣11⟩)/√2
+Paso 1: Sistema total (puro): ρ_AB=∣Φ^+⟩⟨Φ^+∣, S(ρ_AB)=0
+Paso 2: Subistema A (traza parcial): ρ_A=〖"Tr" 〗_B (ρ_AB)=I/2, eigenvalues=[0.5,0.5]
+S(ρ_A)=-2⋅(0.5〖log⁡〗_2 0.5)=1" bit"
+Igual para ρ_B.
+Interpretación: Sistema total "sabe todo" (S=0), pero cada mitad está completamente incierta (S=1). El entrelazamiento es la "información compartida cuánticamente".
+-Ejemplo 2: Dos qubits con magnetización parcial
+Estado: √0.8∣00⟩+√0.2∣11⟩
 
 ## Entropía como función de la dimensionalidad
-## Introducción:
+-Introducción:
 En teoría de la información y aprendizaje automático, laentropía crece explosivamente con la dimensionalidad D del espacio de datos ("maldición de la dimensionalidad"). En D→∞, el volumen se concentra en la cáscara superficial, haciendo H∝D×2ᴰ. Elprincipio holográfico resuelve esto: toda información D-dimensional se codifica eficientemente en (D-1)-dimensional, como enAdS/CFT donde gravedad 5D=teoría de campos 4D en frontera (Bellman, 1961;Maldacena, 1998).
 Fórmula clave: Entropía volumétricaDatos uniformes en hipercubo ^D:Volumen accesible: ~99.999% en superficie R^{D-1} para D>10.Entropía superficial: (¡como agujeros negros!).
 Ejemplo 1: Dado en D dimensiones
