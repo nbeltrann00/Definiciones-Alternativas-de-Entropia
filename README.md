@@ -130,7 +130,22 @@ Igual para ρ_B.
 Interpretación: Sistema total "sabe todo" (S=0), pero cada mitad está completamente incierta (S=1). El entrelazamiento es la "información compartida cuánticamente".
 -Ejemplo 2: Dos qubits con magnetización parcial
 Estado: √0.8∣00⟩+√0.2∣11⟩
-
+## Tabla de Entropias
+|---------------------------------------------------------------|
+ -Estado    -S(ρ_AB)    -S(ρ_A)    -S(ρ_B)	   -Entrelazamiento
+ -Bell      -0             -1	      -1        -Máximo (1 bit)         
+ -Separado  -0.32         -0.50	     -0.50      -Bajo (0.18 bit)
+ -Producto  -0.32         -0.11	     -0.32      -Ninguno (0)
+|---------------------------------------------------------------|	
+Cálculo detallado: ρ_A=(■(0.8&0@0&0.2))
+S(ρ_A)=-[0.8〖log⁡〗_2 0.8+0.2〖log⁡〗_2 0.2]≈0.50" bits"
+Entrelazamiento cuantificado: E=S(ρ_A)=0.50 bits (para estados puros).
+Aplicaciones Prácticas
+	Criptografía cuántica: Protocolo BB84 usa entropía para detectar espionaje (Eve introduce entropía).
+	Computación cuántica: Estados con S(ρ_A)≈1 para cada qubit son ideales para qubits lógicos.
+	Teletransportación: Requiere entropía máxima en pares EPR precompartidos.
+Conexión con Termodinámica
+La entropía de von Neumann reduce a Shannon para bases comunes, y para muchos partículas no interactuantes reproduce Boltzmann. El principio de máxima entropía cuántico de Jaynes da distribuciones térmicas desde restricciones de energía (Vedral et al., 1997).
 ## Entropía como función de la dimensionalidad
 -Introducción:
 En teoría de la información y aprendizaje automático, laentropía crece explosivamente con la dimensionalidad D del espacio de datos ("maldición de la dimensionalidad"). En D→∞, el volumen se concentra en la cáscara superficial, haciendo H∝D×2ᴰ. Elprincipio holográfico resuelve esto: toda información D-dimensional se codifica eficientemente en (D-1)-dimensional, como enAdS/CFT donde gravedad 5D=teoría de campos 4D en frontera (Bellman, 1961;Maldacena, 1998).
