@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/ENTROPÍA-TERMODINÁMICA%20%7C%20INFORMACIÓN%20%7C%20CUÁNTICA-blueviolet?style=for-the-badge&logo=python&logoColor=white" />
+</p>
+
+<h1 align="center">📘 Proyecto: ENTROPÍA</h1>
+
+<p align="center">
+  <b>Dispersión de la energía • Microestados • Shannon • Entrelazamiento • Dimensionalidad</b>
+</p>
+
+<hr>
+
+
 # Definiciones-Alternativas-de-Entropia
 Entropía – Repositorio
 Definición de la entropía como la dispersión de la energía
