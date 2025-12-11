@@ -83,7 +83,7 @@ Paso 1: Construye el árbol Huffman (proceso simplificado):
 	Final: e(0.30) vs "trso"(0.40) → raíz
 Tabla de códigos resultantes:
 |-----------------------------------------------------|
-| |Letra|		|Prob|		|Código|	|Longitud|    |
+| Letra 		Prob		Código  	  Longitud    |
 |-----------------------------------------------------|
 |- e	   		0.30	      0	         	1         |
 |- t	        0.20	     100	    	3         |
