@@ -1,6 +1,5 @@
 
 # Entropía y Segunda Ley de la Termodinámica  
-**Contenido 100 % literal del documento original – sin editar ni una coma
 
 Definición de la entropía como la dispersión de la energía
 Para tener una definiciónmás moderna de la entropía, la definen Atkins y De Paula (2008) como la medida del grado de disipación de la energía en un sistema y alrededores,
