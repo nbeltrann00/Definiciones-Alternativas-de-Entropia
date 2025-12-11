@@ -89,7 +89,8 @@ H₂O(s) → H₂O(l) a +10 °C → ΔSₜₒₜ > 0 → **espontáneo**
 
 ### Referencias
 
-- Atkins, P., & De Paula, J. (2008). *Química Física*, 8ª ed.).  
+- Física Estadística (Boltzmann/Microestados) 
+Reif, F. (1965). Fundamentals of statistical and thermal physics. McGraw-Hill.
 - Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill.  
 - Bellman, R. (1961). *Adaptive Control Processes*. Princeton University Press.  
 - ’t Hooft, G. (1993). Dimensional reduction in quantum gravity. arXiv:gr-qc/9310026  
@@ -97,6 +98,3 @@ H₂O(s) → H₂O(l) a +10 °C → ΔSₜₒₜ > 0 → **espontáneo**
 - Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Review.
 
 ---
-
-¡Listo! Copia todo esto tal cual en tu `README.md` y se verá **perfecto** en GitHub.  
-Si quieres que te genere el banner real con IA (estilo futurista con dispersión de partículas y ecuación de Boltzmann), avísame y te lo creo el link directo para que lo subas. ¡Éxito con el repo!
