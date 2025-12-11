@@ -132,12 +132,13 @@ Interpretación: Sistema total "sabe todo" (S=0), pero cada mitad está completa
 Estado: √0.8∣00⟩+√0.2∣11⟩
 ## Tabla de Entropias
 
-|---------------------------------------------------------------|
+
  -Estado    -S(ρ_AB)    -S(ρ_A)    -S(ρ_B)	   -Entrelazamiento
- -Bell      -0             -1	      -1        -Máximo (1 bit)         
- -Separado  -0.32         -0.50	     -0.50      -Bajo (0.18 bit)
- -Producto  -0.32         -0.11	     -0.32      -Ninguno (0)
-|---------------------------------------------------------------|	
+|-----------------------------------------------------------------|
+ -Bell      -0             -1	      -1        -Máximo (1 bit)   |     
+ -Separado  -0.32         -0.50	     -0.50      -Bajo (0.18 bit)  |
+ -Producto  -0.32         -0.11	     -0.32      -Ninguno (0)      |
+|-----------------------------------------------------------------|	
 Cálculo detallado: ρ_A=(■(0.8&0@0&0.2))
 S(ρ_A)=-[0.8〖log⁡〗_2 0.8+0.2〖log⁡〗_2 0.2]≈0.50" bits"
 Entrelazamiento cuantificado: E=S(ρ_A)=0.50 bits (para estados puros).
