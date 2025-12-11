@@ -83,15 +83,15 @@ Paso 1: Construye el árbol Huffman (proceso simplificado):
 	Final: e(0.30) vs "trso"(0.40) → raíz
 Tabla de códigos resultantes:
  
-  Letra		Prob	Código	    Longitud
-- e	   		0.30	      0	         1
-- t	        0.20	     100	     3
-- a	   		0.15	     110	     3
-- o	   		0.10	     1010	     4
-- i	   		0.08	     1110	     4
-- n	   		0.07	     1111	     4
-- r	  		0.05	     10110	     5
-- s	   		0.05	     10111	     5
+  # Letra		Prob		Código		Longitud
+- e	   		0.30	      0	         	1
+- t	        0.20	     100	    	3
+- a	   		0.15	     110	    	3
+- o	   		0.10	     1010	    	4
+- i	   		0.08	     1110	    	4
+- n	   		0.07	     1111	    	4
+- r	  		0.05	     10110	   		5
+- s	   		0.05	     10111	   		5
 Paso 2: Calcula tasa promedio de bits
 -L=0.30⋅1+0.20⋅3+0.15⋅3+0.10⋅4+0.08⋅4+0.07⋅4+0.05⋅5+0.05⋅5=3.05" bits/letra" 
 Paso 3: Entropía teórica H
