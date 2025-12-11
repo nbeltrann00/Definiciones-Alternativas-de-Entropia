@@ -105,8 +105,7 @@ Paso 3: Entropía teórica H
 Conclusión: En textos reales, Huffman ahorra ~60% espacio. ZIP/JPG lo usan combinado con otros métodos (Shannon, 1948).
 
 ## Entropía como función de la dimensionalidad
-
-> Introducción
+## Introducción:
 En teoría de la información y aprendizaje automático, laentropía crece explosivamente con la dimensionalidad D del espacio de datos ("maldición de la dimensionalidad"). En D→∞, el volumen se concentra en la cáscara superficial, haciendo H∝D×2ᴰ. Elprincipio holográfico resuelve esto: toda información D-dimensional se codifica eficientemente en (D-1)-dimensional, como enAdS/CFT donde gravedad 5D=teoría de campos 4D en frontera (Bellman, 1961;Maldacena, 1998).
 Fórmula clave: Entropía volumétricaDatos uniformes en hipercubo ^D:Volumen accesible: ~99.999% en superficie R^{D-1} para D>10.Entropía superficial: (¡como agujeros negros!).
 Ejemplo 1: Dado en D dimensiones
