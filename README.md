@@ -45,7 +45,6 @@ Paso 1: Identifica Ω (número de microestados).Es el número de formas de elegi
 Paso 2: Calcula la entropía.(Aquí es la constante de Boltzmann; numéricamente ~1.38×10^{-23} J/K, pero para sistemas macro se usa en unidades arbitrarias).
 Paso 3: Compara con máximo.Máxima Ω total = 2^{20} = 1,048,576 (todos los estados posibles).S_máx =k_Bln(2^{20}) = 20k_Bln 2 ≈ 13.86k_B.Conclusión: Estemacroestado tiene ...(truncated 5066 characters)...nn. El principio de máxima entropía cuántico de Jaynes da distribuciones térmicas desde restricciones de energía (Vedral et al., 1997).
 ## Entropía como calidad de información 
-
 La entropía de Shannon, desarrollada en 1948, redefine la entropía como una medida de incertidumbre o información promedio en un mensaje o fuente de datos. No es "desorden físico", sino cuántos bits necesitas en promedio para describir un evento aleatorio. Para una fuente con eventos de probabilidad p_i, la entropía mide la "sorpresa media" necesaria para codificar la información (Shannon, 1948).
 Definición Matemática
 Para una variable aleatoria discreta X con N posibles outcomes de probabilidades {p_1ⓜ,p_2ⓜ,...ⓜ,p_N }:
@@ -82,16 +81,16 @@ Paso 1: Construye el árbol Huffman (proceso simplificado):
 	Une a+"in" = 0.30 → nodo "ain"
 	Une t+"rso" = 0.40 → nodo "trso"
 	Final: e(0.30) vs "trso"(0.40) → raíz
-## Tabla de códigos resultantes:
+Tabla de códigos resultantes:
 Letra	Prob	Código	    Longitud
--e	   0.30	      0	           1
--t	   0.20	     100	       3
--a	   0.15	     110	       3
--o	   0.10	     1010	       4
--i	   0.08	     1110	       4
--n	   0.07	     1111	       4
--r	   0.05	     10110	       5
--s	   0.05	     10111	       5
+- e	   0.30	      0	           1
+- t	   0.20	     100	       3
+- a	   0.15	     110	       3
+- o	   0.10	     1010	       4
+- i	   0.08	     1110	       4
+- n	   0.07	     1111	       4
+- r	   0.05	     10110	       5
+- s	   0.05	     10111	       5
 Paso 2: Calcula tasa promedio de bits
 -L=0.30⋅1+0.20⋅3+0.15⋅3+0.10⋅4+0.08⋅4+0.07⋅4+0.05⋅5+0.05⋅5=3.05" bits/letra" 
 Paso 3: Entropía teórica H
