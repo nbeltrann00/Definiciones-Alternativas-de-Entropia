@@ -131,6 +131,7 @@ Interpretación: Sistema total "sabe todo" (S=0), pero cada mitad está completa
 -Ejemplo 2: Dos qubits con magnetización parcial
 Estado: √0.8∣00⟩+√0.2∣11⟩
 ## Tabla de Entropias
+
 |---------------------------------------------------------------|
  -Estado    -S(ρ_AB)    -S(ρ_A)    -S(ρ_B)	   -Entrelazamiento
  -Bell      -0             -1	      -1        -Máximo (1 bit)         
