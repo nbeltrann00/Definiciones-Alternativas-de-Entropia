@@ -10,7 +10,7 @@
 - [6. Referencias](#referencias)
 
 ---
-Definición de la entropía como la dispersión de la energía
+## Definición de la entropía como la dispersión de la energía
 Para tener una definiciónmás moderna de la entropía, la definen Atkins y De Paula (2008) como la medida del grado de disipación de la energía en un sistema y alrededores,
 En palabras textuales:
 “Una interpretaciónmás satisfactoria de la entropía, es como medida de la disipación de la energía. Cuando ocurre un cambio, la energía se disipa más y la entropía aumenta.así lasegunda ley de latermodinámicaes, por lo tanto, la afirmación de que la energía tiene a disiparse y que existe una dirección natural del cambioen la que la energía queda cada vezmás disipada.” (Atkins y De Paula, 2008,pág. 77-78)
@@ -23,28 +23,29 @@ Resumiendo, así la segunda ley como:
 ΔStot > 0
 (Atkins & de Paula, 2008, pp. 78–79)
 
-EJERCICIOS PRACTICOS:
+## EJERCICIOS PRACTICOS:
 Enunciado Un cubito de hielo a 0 °C se pone en agua a 25 °C.
 La energía térmica del agua tibia se reparte hacia el hielo (lo derrite) y queda distribuida entre muchas más moléculas en forma líquida. → La energía total sedisipa más que antes →ΔS_tot > 0 → proceso espontáneo. El proceso inverso (el agua líquida se congela sola sacando calor al ambiente más caliente) nunca ocurre porque disminuiría la disipación total de energía.
 Enunciado Un recipiente dividido en dos partes: una con helio y otra con neón (misma T y P). Se quita la pared divisoria.
 Las moléculas de cada gas, que antes estaban confinadas en la mitad del volumen, ahora ocupan todo el recipiente. → La energía cinética de traslación se reparte en un volumen mayor número de posiciones posibles → la energía sedisipa más →ΔS_tot > 0 → la mezcla es espontánea. Nunca se ve que los gases se separen solos, porque eso concentraría la energía en menos microestados.
 
-Entropía como distribución de microestados
+## Entropía como distribución de microestados
 En la termodinámica estadística, la entropía cuantifica la multiplicidad de microestados accesibles a un macroestado especificado por variables extensivas como energía, volumen y número de partículas. Esta formulación, propuesta por Ludwig Boltzmann, fundamenta la irreversibilidad termodinámica en el principio de máxima probabilidad, donde los macroestados de alta entropía dominan debido a su superior degeneración microscópica (Reif, 1965).
-Microestados y MicroestadosUn microestado es como una "foto instantánea completa" de todo lo que pasa dentro del sistema: la posición exacta (q) y la velocidad (p) de cada una de las N partículas. Imagina el "espacio de fase" como un mapa gigante en 6 dimensiones por partícula (3 para posición + 3 para velocidad), así que para N partículas son 6N dimensiones en total.
-Elmacroestado es una "región grande" en ese mapa (ΔΓ), que agrupa muchos microestados parecidos. Por ejemplo, todos los microestados donde el gas tiene energía E, volumen V y N moléculas.
+## Microestados y Microestados
+Un microestado es como una "foto instantánea completa" de todo lo que pasa dentro del sistema: la posición exacta (q) y la velocidad (p) de cada una de las N partículas. Imagina el "espacio de fase" como un mapa gigante en 6 dimensiones por partícula (3 para posición + 3 para velocidad), así que para N partículas son 6N dimensiones en total.
+El macroestado es una "región grande" en ese mapa (ΔΓ), que agrupa muchos microestados parecidos. Por ejemplo, todos los microestados donde el gas tiene energía E, volumen V y N moléculas.
 Entonces, Ω (el número de microestados) se calcula como el tamaño de esa región dividido por h^{3N} N! (h es la constante de Planck para corregir unidades cuánticas, y N! porque las partículas son idénticas y no distinguimos cuál es cuál).
 Finalmente, la entropía sale como S =k_Bln Ω. Y cuando N es muy grande (límite termodinámico), esta S se comporta como una propiedad "normal" que suma sijuntas sistemas (Reif, 1965).
 La Segunda Ley, al NaturalLa segunda ley dice que la entropía nunca baja (ΔS ≥ 0) en un sistema aislado. ¿Por qué? Porque Ω (número de microestados) solo puede aumentar o quedarse igual. Las trayectorias en el espacio de fase conservan Ω (como billar), pero que el sistema "vaya hacia atrás" a un Ω menor es como que todas las moléculas se junten solas de nuevo: la probabilidad es e^{-N}, ridículamente pequeña cuando Nes grande (tipo Avogadro).
 Esto explica paradojas como eldemonio de Maxwell: un ser que "mide" moléculas para separar rápidas de lentas. Parece violar la segunda ley, pero medir genera entropía extra (información = correlación = desorden oculto), así que al final todo suma (Reif, 1965).
-Ejemplos prácticos:
+## Ejemplos prácticos:
 Ejemplo 1: Entropía de 20 monedas (Sistema simple de dos estados)
 Situación: Imagina 20 monedas justas justas (cara o cruz). Calcula la entropía delmacroestado con exactamente 10 caras y 10 cruces.
 Paso 1: Identifica Ω (número de microestados).Es el número de formas de elegir 10 caras de 20 monedas:
 Paso 2: Calcula la entropía.(Aquí es la constante de Boltzmann; numéricamente ~1.38×10^{-23} J/K, pero para sistemas macro se usa en unidades arbitrarias).
-Paso 3: Compara con máximo.Máxima Ω total = 2^{20} = 1,048,576 (todos los estados posibles).S_máx =k_Bln(2^{20}) = 20k_Bln 2 ≈ 13.86k_B.Conclusión: Estemacroestado tiene ...(truncated 5066 characters)...nn. Elprincipio de máxima entropía cuántico deJaynes da distribuciones térmicas desde restricciones de energía (Vedral et al., 1997).
+Paso 3: Compara con máximo.Máxima Ω total = 2^{20} = 1,048,576 (todos los estados posibles).S_máx =k_Bln(2^{20}) = 20k_Bln 2 ≈ 13.86k_B.Conclusión: Estemacroestado tiene ...(truncated 5066 characters)...nn. El principio de máxima entropía cuántico de Jaynes da distribuciones térmicas desde restricciones de energía (Vedral et al., 1997).
 
-Entropía como función de la dimensionalidad
+## Entropía como función de la dimensionalidad
 IntroducciónEn teoría de la información y aprendizaje automático, laentropía crece explosivamente con la dimensionalidad D del espacio de datos ("maldición de la dimensionalidad"). En D→∞, el volumen se concentra en la cáscara superficial, haciendo H∝D×2ᴰ. Elprincipio holográfico resuelve esto: toda información D-dimensional se codifica eficientemente en (D-1)-dimensional, como enAdS/CFT donde gravedad 5D=teoría de campos 4D en frontera (Bellman, 1961;Maldacena, 1998).
 Fórmula clave: Entropía volumétricaDatos uniformes en hipercubo ^D:Volumen accesible: ~99.999% en superficie R^{D-1} para D>10.Entropía superficial: (¡como agujeros negros!).
 Ejemplo 1: Dado en D dimensiones
@@ -71,25 +72,26 @@ Límite físico-ML:Autoencoders =duality holográfica
 Big Data: Nunca proceses D>1000 sin reducción dimensional (Bellman, 1961).
 Conclusión: La maldición dimensionalidad + holografía =teorema universal: toda información compleja vive en su "frontera", sea física o datos.
 
-Definición yecuaciónde la segunda ley de latermodinámica
-Lasegunda ley de latermodinámicase basa endefinirladirección de los procesos naturalesen un sistema aislado aumenta espontáneamente. Esto serepresenta comoentropía total oentropía del universo[].A su vez esta ley complementa a la primera ley de la termodinámicala cualestablece que la energía seconserva,pero no predice la dirección de cambio.
-Entropía (S) y Cambio de Entropía (ΔS):
-Apartir dellibroChemistry(Flowers, Theopold, Langley Richard, & Robinson, 2015, págs.891-893)podemos tomar entropía(S) como desorden o aleatoriedadde un sistema en un estado especifico. Ahorabien, el cambio de laentropía lo podemos calcular con:
+## Definición ecuaciónde segunda ley de latermodinámica
+La segunda ley de la termodinámica se basa en definir la dirección de los procesos naturalesen un sistema aislado aumenta espontáneamente. Esto serepresenta comoentropía total oentropía del universo[].A su vez esta ley complementa a la primera ley de la termodinámicala cualestablece que la energía seconserva,pero no predice la dirección de cambio.
+## Entropía (S) y Cambio de Entropía (ΔS):
+Apartir del libroChemistry(Flowers, Theopold, Langley Richard, & Robinson, 2015, págs.891-893)podemos tomar entropía(S) como desorden o aleatoriedadde un sistema en un estado especifico. Ahorabien, el cambio de la entropía lo podemos calcular con:
 ΔS =S_final –S_inicial
-Otra cosapara tener en cuenta es queΔS_univ se puede calcular de la forma:
+Otra cosa para tener en cuenta es queΔS_univ se puede calcular de la forma:
 ΔS_univ =ΔS_sis +ΔS_alr
-SiendoΔS_sisel cambio de entropía del sistema yΔS_alrel cambio de entropía de los alrededores. En caso de necesitar calcularΔS_alr podemos tomar la formulaΔS_alr = (-ΔH_sis) / T.
-Como un extra podríamostener en cuenta la energía libre de Gibbs (ΔG = ΔH - T *ΔS_sis) pero para este repositorio no profundizaremos sobre esta misma.
+Siendo ΔS_sisel cambio de entropía del sistema y ΔS_alrel cambio de entropía de los alrededores. En caso de necesitar calcular ΔS_alr podemos tomar la formulaΔS_alr = (-ΔH_sis) / T.
+Como un extra podríamos tener en cuenta la energía libre de Gibbs (ΔG = ΔH - T *ΔS_sis) pero para este repositorio no profundizaremos sobre esta misma.
 Partiendo es estos cálculospodríamos tomar criterios claves para determinar si el proceso es espontaneo o no espontaneo. Los criterios para esto son:
 SiΔS_univ > 0, el proceso es Espontáneo.
 SiΔS_univ < 0, el proceso es No espontáneo.
 SiΔS_univ = 0, el proceso es Reversible
-Ejemplos:
+## Ejemplos:
 ¿Se derretirá el hielo espontáneamente?
 La variación de entropía del proceso H₂O(s)⟶ H₂O(l) es de 22,1 J/K y requiere que el entorno transfiera 6,00 kJ de calor al sistema. ¿Es el proceso espontáneo a −10,00 °C? ¿Es espontáneo a +10,00 °C?
 RTA: La congelación esespontánea a -10 °C alΔS_univ ser positivo
 La congelación esnoespontánea a 10 °C alΔS_univ sernegativo
 
+## Referencias
 - Física Estadística (Boltzmann/Microestados) 
 Reif, F. (1965). Fundamentals of statistical and thermal physics. McGraw-Hill.
 - Shannon, C. E. (1948). A mathematical theory of communication. The Bell System Technical Journal, 27(3), 379-423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x
