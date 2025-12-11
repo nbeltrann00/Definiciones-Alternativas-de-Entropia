@@ -1,6 +1,15 @@
 
 # Entropía y Segunda Ley de la Termodinámica  
+## Índice
 
+- [1. Entropía como dispersión de la energía](#1-entropía-como-dispersión-de-la-energía)
+- [2. Ejemplos prácticos de dispersión](#2-ejemplos-prácticos-de-dispersión)
+- [3. Entropía estadística: microestados y fórmula de Boltzmann](#3-entropía-estadística-microestados-y-fórmula-de-boltzmann)
+- [4. Entropía y alta dimensionalidad (maldición + holografía)](#4-entropía-y-alta-dimensionalidad-maldición--holografía)
+- [5. Segunda Ley de la Termodinámica y criterio de espontaneidad](#5-segunda-ley-de-la-termodinámica-y-criterio-de-espontaneidad)
+- [6. Referencias](#referencias)
+
+---
 Definición de la entropía como la dispersión de la energía
 Para tener una definiciónmás moderna de la entropía, la definen Atkins y De Paula (2008) como la medida del grado de disipación de la energía en un sistema y alrededores,
 En palabras textuales:
